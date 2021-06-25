@@ -1,11 +1,11 @@
 # Airflow-extended-functions
-Developed end-to-end extended functions for Airflow by Steve
+Developed end-to-end extended functions for Airflow by Steve.
 
 # Reference Apache Airflow Documents
 ## Setting up Running Airflow in Docker
 http://apache-airflow-docs.s3-website.eu-central-1.amazonaws.com/docs/apache-airflow/latest/start/docker.html
 
-## utils_by_steve.py; Author: Steve.
+## utils_by_steve.py
 Prepare in advance.
 1. Setting up AWS credential.
 2. Each job generate as same as job name in S3 path, it contains main.py and parameter.py in folder.
@@ -18,12 +18,12 @@ When trigger DAG running
 4. to_bash_command function parse the parameters from parameter.py and transform bash parameters string return back.
 5. subprocess.check_output execute the main.py and parameters string by bash scripting.
 6. It will catch traceback information, if it happened exception.
-7. It set up state failed and exception in context then it callable notify_email function to send the error message mailing.
+7. It set up State.FAILED and exception in context then it callable notify_email function to send the error message mailing.
 
 
 ## Airflow Stable REST API
 http://apache-airflow-docs.s3-website.eu-central-1.amazonaws.com/docs/apache-airflow/latest/stable-rest-api-ref.html
-## airflow_trigger_api.py; Author: Steve.
+## airflow_trigger_api.py
 Prepare in advance.
 1. Setting up the API authorization (backend.basic_auth or backend.defult)
 2. Use airflow_trigger_api.py to send the API request.

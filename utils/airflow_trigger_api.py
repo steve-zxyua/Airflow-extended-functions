@@ -10,8 +10,8 @@ headers = {
     'Content-Type': 'application/json',
 }
 
-auth = HTTPBasicAuth('[username]', '[password]')                # input username and password.
-dag_id = ""         # input dag_id to generate GET or POST request API.
+auth = HTTPBasicAuth('[username]', '[password]')        # input username and password.
+dag_id = "[dag_id]"                                     # input dag_id to generate GET or POST request API.
 
 # input the parameters when request sending.
 body = {
