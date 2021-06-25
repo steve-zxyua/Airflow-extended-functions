@@ -10,7 +10,7 @@ headers = {
     'Content-Type': 'application/json',
 }
 
-auth = HTTPBasicAuth('airflow', 'airflow')      # this is default username and password from Apache airflow.
+auth = HTTPBasicAuth('[username]', '[password]')                # input username and password.
 dag_id = ""         # input dag_id to generate GET or POST request API.
 
 # input the parameters when request sending.
