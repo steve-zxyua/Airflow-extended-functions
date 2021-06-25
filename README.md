@@ -10,8 +10,9 @@ Prepare in advance.
 1. Setting up AWS credential.
 2. Each job generate as same as job name in S3 path, it contains main.py and parameter.py in folder.
 3. Upload dags, utils and py_script from S3 to EC2. 
-(in EC2 within docker path such as: /opt/airflow/py_scripts)
-When trigger DAG running
+(in EC2 within docker path such as: /opt/airflow/utils)
+
+When trigger Airflow DAG running.
 1. Airflow task will callable func function from utils_by_steve.py
 2. It will take up func to setup parameters. If there are op_kwargs in task, it will take up func with context together.
 3. Then it callable to_bash_command after func setted up.
