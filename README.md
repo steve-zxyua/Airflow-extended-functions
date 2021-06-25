@@ -1,2 +1,2 @@
 # Airflow-extended-functions
-Developed end-to-end extended function for Airflow by Steve
+Developed end-to-end extended functions for Airflow by Steve
