@@ -2,7 +2,7 @@
 Developed end-to-end extended functions for Airflow by Steve.
 
 # Reference Apache Airflow Documents
-## Setting up Running Airflow in Docker
+## Running Airflow in Docker
 http://apache-airflow-docs.s3-website.eu-central-1.amazonaws.com/docs/apache-airflow/latest/start/docker.html
 
 ## utils_by_steve.py
